@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Current Imaging Work &#8212; BrainImages  documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Neuroimaging Techniques" href="imaging_modalities.html" />
+    <link rel="prev" title="Previous Imaging Work" href="previous_work.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="current-imaging-work">
+<h1>Current Imaging Work<a class="headerlink" href="#current-imaging-work" title="Permalink to this headline">¶</a></h1>
+<p>In my current job, I provide operational support for genomic medicine research (<a class="reference internal" href="cvpage.html"><span class="doc">see my CV</span></a>). However, I also assist in the development of quantitative imaging pipelines.</p>
+<div class="section" id="quantitative-imaging-in-lung-cancer">
+<h2>Quantitative Imaging in Lung Cancer<a class="headerlink" href="#quantitative-imaging-in-lung-cancer" title="Permalink to this headline">¶</a></h2>
+<p>According to the American Cancer Society, there were roughly 234,030 new cases of lung cancer and 154,050 deaths in 2018 alone.</p>
+<p>This project involves the development of a pipeline (framework) for the extraction of clinically relevant features from clinical images and reports and their subsequent rendering to a structured format that is amenable to real time query.</p>
+</div>
+<div class="section" id="clinical-relevance">
+<h2>Clinical Relevance<a class="headerlink" href="#clinical-relevance" title="Permalink to this headline">¶</a></h2>
+<p>It is very import to understand how effective an ongoing treatment plan is. To do this a baseline must first be established and changes over the course of the treatment must be monitored.</p>
+<p>This pipeline uses the initial diagnosis “process” for establishing a baseline and repetition of certain steps to evaluate changes <strong>(Fig 1)</strong>:</p>
+<blockquote>
+<div><ol class="upperalpha simple">
+<li>Initial consult – patient &amp; physician meet, imaging study is ordered.</li>
+<li>Patient is imaged.</li>
+<li>Radiologist creates a radiology report.</li>
+<li>Ad Hoc analysis, Tumor Board consult &amp; Treatment Recommendation(s).</li>
+</ol>
+</div></blockquote>
+<p>Steps <strong>A through D</strong> are repeated for tracking disease progression. The pipeline extracts information from <strong>B &amp; C</strong> to aid in step <strong>D</strong> by providing more validated data points.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/relevance.png"><img alt="_images/relevance.png" src="_images/relevance.png" style="width: 357.7px; height: 342.3px;" /></a>
+<p class="caption"><span class="caption-text"><strong>Fig 1:</strong> Schematic representation of the current process for assessing a patient’s tumor status: There are 4 inputs (green lines) for determining clinical status (center box); these are  consults, imaging, assessments and evaluations.</span></p>
+</div>
+</div>
+<div class="section" id="brief-description-of-the-pipeline">
+<h2>Brief description of the Pipeline<a class="headerlink" href="#brief-description-of-the-pipeline" title="Permalink to this headline">¶</a></h2>
+<p>A modular pipeline <strong>(Fig 2)</strong> was constructed so that components may be easily updated or replaced. Information is extracted from images and reports using quantitative image processing and natural language processing techniques. Extracted metadata is stored in a database to be made available for later analysis.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/pipeline.png"><img alt="_images/pipeline.png" src="_images/pipeline.png" style="width: 467.6px; height: 407.4px;" /></a>
+<p class="caption"><span class="caption-text"><strong>Fig 2:</strong> Pipeline Schematic</span></p>
+</div>
+</div>
+<div class="section" id="phantom-and-imaging-related-components">
+<h2>Phantom and Imaging Related Components<a class="headerlink" href="#phantom-and-imaging-related-components" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/phantom.png"><img alt="_images/phantom.png" src="_images/phantom.png" style="width: 643.0px; height: 360.0px;" /></a>
+</div>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/pipeline_steps.png"><img alt="_images/pipeline_steps.png" src="_images/pipeline_steps.png" style="width: 654.0px; height: 350.0px;" /></a>
+</div>
+</div>
+<div class="section" id="extraction">
+<h2>Extraction<a class="headerlink" href="#extraction" title="Permalink to this headline">¶</a></h2>
+<p>To obtain tumor volume, image slices are manually marked. For example, the border with blue dots <strong>(Fig 5)</strong> shows the ROI manually highlighted while the image on the right is the result of the Active Contour Algorithm, which is used evalualte the tumor borders.</p>
+<div class="figure align-left" id="id3">
+<a class="reference internal image-reference" href="_images/extraction.png"><img alt="_images/extraction.png" src="_images/extraction.png" style="width: 698.5px; height: 231.0px;" /></a>
+<p class="caption"><span class="caption-text"><strong>THIS PAGE IS STILL UNDER CONSTRUCTION</strong></span></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Polly&#8217;s Research Homepage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="previous_work.html">Previous Imaging Work</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Current Imaging Work</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#quantitative-imaging-in-lung-cancer">Quantitative Imaging in Lung Cancer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clinical-relevance">Clinical Relevance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#brief-description-of-the-pipeline">Brief description of the Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#phantom-and-imaging-related-components">Phantom and Imaging Related Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#extraction">Extraction</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="imaging_modalities.html">Neuroimaging Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publications.html">Publications List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cvpage.html">Curriculum Vitae (CV)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="toc.html">Documentation overview</a><ul>
+      <li>Previous: <a href="previous_work.html" title="previous chapter">Previous Imaging Work</a></li>
+      <li>Next: <a href="imaging_modalities.html" title="next chapter">Neuroimaging Techniques</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, cerulean10.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/current_work.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

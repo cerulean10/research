@@ -1,0 +1,8 @@
+Publications List
+=================
+
+.. image:: _static/pubs_Dec2017_web.png
+   :scale: 100 %
+   :align: left
+
+

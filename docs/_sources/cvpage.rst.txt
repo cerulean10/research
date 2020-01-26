@@ -1,0 +1,6 @@
+Curriculum Vitae (CV)
+=====================
+
+A pdf version of my CV is available :download:`here <_static/Dhond_CV_Dec2017_web.pdf>`
+
+

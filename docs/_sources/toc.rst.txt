@@ -1,0 +1,14 @@
+Human Imaging
+=============
+
+.. toctree::
+   :maxdepth: 2
+   
+   index
+   previous_work
+   current_work
+   imaging_modalities
+   publications
+   cvpage
+
+

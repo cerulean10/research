@@ -1,0 +1,103 @@
+Previous Imaging Work
+=====================
+
+From 1999-2012, I researched brain function in living humans. This included work in somatosensation, visual imagery (3D immersion), neuroplasticity, language and memory.  For details please see my :doc:`CV <cvpage>` and :doc:`publications. <publications>`
+
+Below is a summary of 2 studies I published, one related to word generation and another to neuroplasticity.
+
+
+Language in the Brain
+---------------------
+
+Classical lesion-based models of language propose that verbal processing follows a strict sequence. For example, when a word is read there is a “serial” flow of information (**Fig. 1**) beginning with letter decoding (visual cortex) to phonological decoding and comprehension (angular gyrus and Wernicke's area) to motor program creation and finally an utterance (Broca's area and motor cortex).
+ 
+.. figure:: _img/classicalmodels.jpg
+    :scale: 70 %
+    :align: center
+
+    **Fig 1:** Lesion based models of language describe brain processing as a strict, *serial*, flow of information.
+
+Today, imaging with PET and fMRI demonstrate a broader "network" of brain areas supporting language. Including ventral occipital, lateral and basal temporal as well as inferior and medial frontal areas. *But what is the sequence of brain activity involved and how does it compare with the serial nature of classic models?*
+
+To better understand the spatial and temporal dynamics of word generation we used :doc:`MEG and MRI <imaging_modalities>` to measure brain response as subjects performed a word-stem completion task. Specifically, subjects were visually presented 3-letter word stems (i.e. "STA") and asked to covertly generate complete words as MEG was recorded.
+
+*We found that although initial activity is serial, after ~250ms post-stimulus multiple areas were active simultaneously.* (**Fig 2**) Thus, brain processing supporting language is more appropriately described as *distributed and parallel*, rather than *serial* as emphasized by classical models.  
+
+.. figure:: _img/wordgen.jpg
+    :scale: 65 %
+    :align: center
+
+    **Fig 2:** Brain response supporting word generation, as revealed by MEG, is more appropriately described as distributed and parallel. 
+
+
+**Conclusion**
+
+In summary, the current study found a progression of activation during word-stem completion, beginning in bilateral visual areas moving forward to ventral temporal, temporal-parietal and finally prefrontal regions lateralizing to the left hemisphere. Importantly, in the final stages, there was **sustained co-activation** of all of the above areas. This sustained activation may permit multiple sources of lexical information (i.e., phonemic, orthographic, and semantic) to converge (possibly within Broca's area) and constrain verbal response selection.  This initial serial but subsequent distributed and parallel processing demonstrates that classical models require modification.
+
+
+
+Neuroplasticity in the Brain
+----------------------------
+
+In addition to language, I have conducted work investigating neuroplasticity. The following show data from Dhond et al 2012.
+
+Brain response to simple somatosensory stimuli follows a characteristic pattern. However, injury can affect these normal response patterns and even result in lasting changes.  In the field of neuroscience (and biology in general...) this phenomenon is called "plasticity". Neural plasticity involves the central nervous system's ability to change or adapt (sometimes maladapt) to a changing peripheral environment or to bodily injury. This is exemplified by changes that occur with median nerve entrapment (injury) more commonly known as carpal tunnel syndrome (CTS). 
+
+
+In Dhond et al 2012 MEG was used to spatiotemporally map differences in brain response to digit stimulation (**Fig. 3**) in healthy volunteers (HV) vs. patients with carpal tunnels syndrome (CTS). 
+
+Brain activity was evaluated for changes (1) Somatotopy, i.e. changes in spatial representation; (2) timing of cortical responses, i.e. the N20 peak; and (3) changes in the power of power of endogenous cortical rhythms, i.e. alpha and beta rhythms.
+
+
+.. figure:: _img/digitstim.jpg
+    :scale: 60 %
+    :align: center
+    
+    **Fig 3:** Healthy volunteers (HV) and CTS patients underwent electrical stimulation of their digits while MEG was recorded.  
+
+
+In short we found 3 neural markers associated with focal nerve entrapment in CTS
+
+  * **Marker 1**- Altered digit somatotopy in S1 cortex **(Fig 4)**
+  * **Marker 2**- Delayed timing of initial cortical response in S1 cortex (M20) **(Fig 5)** 
+  * **Marker 3**- Altered sensory rhythms in S1 cortex (alpha and beta rhythms) **(Fig 6)**
+
+
+
+.. figure:: _img/marker1.jpg
+    :scale: 70 %
+    :align: left
+
+    **Fig 4:** Digit representation in somatosensory cortex is blurred for CTS patients vs. healthy volunteers (HV).   
+
+
+
+.. figure:: _img/marker2.jpg
+    :scale: 70 %
+    :align: left
+
+    **Fig 5:** The timing of initial brain response (N20 peak) is later in CTS vs. HV.   
+
+
+
+.. figure:: _img/marker3.jpg
+    :scale: 70 %
+    :align: left
+
+    **Fig 6:** CTS patients demonstrate decreased SI beta and alpha power in comparison to HV when their digits (fingers) are stimulated.  
+
+
+
+
+**Conclusion**  
+
+Smaller cortical source separation for D2 and D3 in CTS patients vs. healthy controls supports the hypothesis that ongoing paresthesias promote blurring of median nerve-innervated digit representations through Hebbian plasticity mechanisms. 
+
+Furthermore, S1 M20 latencies for median nerve-innervated digits were longer in carpal tunnel syndrome; thus, slower peripheral nerve conduction velocity corresponds to greater delays in the latency of the first cortical response. 
+
+Finally, CTS patients demonstrated attenuated beta response that correlated with increasing paresthesia ratings. One explanation is that ongoing paresthesias in median nerve-innervated digits render their corresponding sensorimotor cortical areas ‘busy’, thus reducing their capacity to process external stimulation. 
+
+These MEG measures are novel markers of neuroplasticity in carpal tunnel syndrome and could be used to study central changes that may occur following clinical intervention.
+
+
+

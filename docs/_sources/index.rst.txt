@@ -1,0 +1,22 @@
+.. BrainImages documentation master file, created by sphinx-quickstart on Thu Jan 11 19:16:21 2018.
+   You can adapt this file to your liking, but it should at least contain the root `toctree` directive.
+
+Polly's Research Homepage
+=========================
+
+Greetings!  I am a neuroscientist with expertise in imaging.  
+
+Currently, I provide operational support for *genomic medicine programs* at the Veterans Health Administration.  I am also involved in the development of quantitative imaging pipelines for lung cancer.  
+
+Previously, my work involved mapping human brain function. This includes studies on somatosensation, plasticity, visual imagery (3D vs. 2D environments), language and memory.
+
+These pages provide examples of my :doc:`current <current_work>` and :doc:`past <previous_work>` imaging work. They also contain general information on :doc:`brain imaging techniques <imaging_modalities>` as well as links to my :doc:`CV <cvpage>` and :doc:`publications <publications>`.
+
+**This site is still under construction and works best with Chrome, Firefox or Safari.**
+
+.. raw:: html
+ 
+ <iframe width="300" height="250" src="_static/avg_hs_mn.mp4" frameborder="0" allowfullscreen></iframe>
+  
+
+
